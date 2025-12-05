@@ -33,7 +33,7 @@
 ## API Configuration
 
 The frontend is configured to connect to:
-- **API Base URL**: `http://localhost:8000/api`
+- **API Base URL**: `https://med6565884.pythonanywhere-services.com//api`
 
 Make sure your Django backend is running on port 8000!
 
@@ -99,7 +99,7 @@ All data is now stored in and retrieved from your MySQL database:
 ## Troubleshooting
 
 ### "Network Error" or "Failed to fetch"
-- Make sure backend is running on `http://localhost:8000`
+- Make sure backend is running on `https://med6565884.pythonanywhere-services.com/`
 - Check browser console for CORS errors
 - Verify `.env` file has correct database credentials
 

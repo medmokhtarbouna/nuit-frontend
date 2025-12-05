@@ -118,7 +118,7 @@ const Login = () => {
                     <Input
                       id="phone"
                       type="tel"
-                      placeholder="42038210"
+                      placeholder="40000000"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value.replace(/\D/g, '') })}
                       className="pl-12"

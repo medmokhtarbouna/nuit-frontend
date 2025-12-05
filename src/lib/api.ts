@@ -1,7 +1,7 @@
 import { auth } from './auth';
 import { Listing, User, SearchFilters } from '@/types';
 
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = 'https://med6565884.pythonanywhere-services.com//api';
 
 // Helper to convert data URL to File
 function dataURLtoFile(dataurl: string, filename: string): File {
@@ -91,7 +91,7 @@ class ApiClient {
     } catch (error: any) {
       // Handle network errors
       if (error.message === 'Failed to fetch' || error.name === 'TypeError') {
-        throw new Error('Cannot connect to server. Please make sure the backend is running on http://localhost:8000');
+        throw new Error('Cannot connect to server. Please make sure the backend is running on https://med6565884.pythonanywhere-services.com/');
       }
       throw error;
     }
@@ -186,7 +186,7 @@ class ApiClient {
     } catch (error: any) {
       // Handle network errors
       if (error.message === 'Failed to fetch' || error.name === 'TypeError') {
-        throw new Error('Cannot connect to server. Please make sure the backend is running on http://localhost:8000');
+        throw new Error('Cannot connect to server. Please make sure the backend is running on https://med6565884.pythonanywhere-services.com/');
       }
       throw error;
     }
@@ -452,7 +452,7 @@ class ApiClient {
           }
           if (typeof imageUrl === 'string') {
             const cleanUrl = imageUrl.startsWith('/') ? imageUrl : `/${imageUrl}`;
-            return [`http://localhost:8000${cleanUrl}`];
+            return [`https://med6565884.pythonanywhere-services.com/${cleanUrl}`];
           }
         }
         
@@ -491,7 +491,7 @@ class ApiClient {
           if (typeof imageUrl === 'string') {
             // Ensure the path starts with /
             const cleanUrl = imageUrl.startsWith('/') ? imageUrl : `/${imageUrl}`;
-            return `http://localhost:8000${cleanUrl}`;
+            return `https://med6565884.pythonanywhere-services.com/${cleanUrl}`;
           }
           
           return null;

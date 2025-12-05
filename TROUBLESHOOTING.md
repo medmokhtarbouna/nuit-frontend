@@ -6,7 +6,7 @@
 
 1. **Backend Server Not Running**
    - Make sure Django server is running
-   - Check: `http://localhost:8000/api/` should show API info
+   - Check: `https://med6565884.pythonanywhere-services.com//api/` should show API info
 
 2. **Wrong Port**
    - Backend should be on port 8000
@@ -26,7 +26,7 @@
    ```
 
 2. **Check Backend is Running:**
-   - Open browser: `http://localhost:8000/api/`
+   - Open browser: `https://med6565884.pythonanywhere-services.com//api/`
    - Should see JSON with API endpoints
 
 3. **Check Frontend Port:**
@@ -56,7 +56,7 @@
 
 Open this URL in browser:
 ```
-http://localhost:8000/api/auth/register/
+https://med6565884.pythonanywhere-services.com//api/auth/register/
 ```
 
 If you see an error page (not "Failed to fetch"), backend is running but endpoint might have issues.
